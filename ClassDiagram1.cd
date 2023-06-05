@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PiecebyPiece.clsGame">
+    <Position X="1.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>clsGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PiecebyPiece.clsMainMenu">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAgAAABQAAABAQAAAQAIAACAAAAAAAACCAAgAAAAhAA=</HashCode>
+      <FileName>clsPiecebyPiece.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PiecebyPiece.GlobalVar">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAEAAAAgAAAAAAFEAAgAAA=</HashCode>
+      <FileName>clsStart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

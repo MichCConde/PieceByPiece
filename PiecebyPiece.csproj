@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29BAF595-F0E6-4785-A4E9-E8E876F709F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PiecebyPiece</RootNamespace>
+    <AssemblyName>PiecebyPiece</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsGame.cs" />
+    <Compile Include="clsPiecebyPiece.cs" />
+    <Compile Include="clsStart.cs" />
+    <Compile Include="Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SecretLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretLevel.Designer.cs">
+      <DependentUpon>SecretLevel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretLevel.resx">
+      <DependentUpon>SecretLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\Level 1 Wallpaper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\Level 2 Wallpaper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\Level 3 Wallpaper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\Main Menu Wallpaper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\Secret Level Wallpaper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Better Logs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Ghost - Mobs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Neko Heart Idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Neko Idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Neko Movement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Puzzle Piece.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Sprite Idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Sprite Movement.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprite Designs\Lvl1 Ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\Map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1 Platform %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1 Platform %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1 Platform %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1 Platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2 Platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floating Platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2 Platform %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2 Platform %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2 Platform %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2 Platform1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2 Platform2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L3 Platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l3 Floating Platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L3 Platform %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door Maps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door BMaps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map Buttons - hovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\gameSlot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper\gameSlot1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameSlotF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameSlotF1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
